@@ -1,2 +1,2 @@
-# pages
-Simple Jekyll site
+# rtxi
+rtxti website
