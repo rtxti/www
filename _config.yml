@@ -1,9 +1,9 @@
 # Site setup
-title: Pages
-description: Simple Jekyll site
+title: rtxti
+description: rtxti website
 
 url: https://rtxti.github.io
-baseurl: /pages
+baseurl: /www
 
 permalink: pretty
 
