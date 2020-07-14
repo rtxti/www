@@ -4,9 +4,9 @@ title: Homepage
 ---
 
 <div class="container-fluid">
-  <div class="card-columns d-inline-block">
+  <div class="card-columns">
     {% for post in site.posts %}
-    <div class="card">
+    <div class="card d-inline-block">
       {% if post.images %}
       <img src="{{ post.images }}" alt="{{ post.title }}" class="card-img-top" />
       {% endif %}
