@@ -1,0 +1,20 @@
+# Site setup
+title: Pages
+description: Simple Jekyll site
+
+url: https://rtxti.github.io
+baseurl: /pages
+
+permalink: pretty
+
+timezone: Asia/Jakarta
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+author:
+  name: rtxti
+  email: rtxti@outlook.com
+  
+version: 1.0.0
