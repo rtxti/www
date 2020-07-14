@@ -18,6 +18,9 @@ title: Homepage
           <p class="card-text">
             {{ post.content | truncate: 140 | strip_html }}
           </p>
+          <time datetime="{{ post.date | date_to_xmlschema }}" class="text-secondary">
+            {{ post.date | date_to_long_string }}
+          </time>
         </div>
       </div>
     </div>
