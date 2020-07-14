@@ -18,11 +18,11 @@ title: Homepage
           <p class="card-text">
             {{ post.content | truncate: 140 | strip_html }}
           </p>
-          <div class="card-footer">
-            <time datetime="{{ post.date | date_to_xmlschema }}" class="text-secondary">
-              <small>{{ post.date | date_to_long_string }}</small>
-            </time>
-          </div>
+        </div>
+        <div class="card-footer border-0 bg-transparent">
+          <time datetime="{{ post.date | date_to_xmlschema }}" class="text-secondary">
+            <small>{{ post.date | date_to_long_string }}</small>
+          </time>
         </div>
       </div>
     </div>
