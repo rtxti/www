@@ -8,16 +8,22 @@ title: Homepage
     {% for post in site.posts %}
     <div class="col mb-3">
       <div class="card h-100">
-        {% if post.images %}
-        <img src="{{ post.images }}" alt="{{ post.title }}" class="card-img-top" />
-        {% endif %}
         <div class="card-body">
           <h4 class="card-title">
             {{ post.title }}
           </h4>
           <p class="card-text">
-            {{ post.content | truncate: 140 | strip_html }}
+            {% if post.description %}
+              {{ post.description | truncate: 140 | strip_html }}
+            {% else %}
+              {{ post.content | truncate: 140 | strip_html }}
+            {% endif %}
           </p>
+          {% if post.images %}
+          <div class="embed-responsive embed-responsive-21by9 border">
+            <img src="{{ post.images }}" alt="{{ post.title }}" class="embed-responsive-item obj-fit-cover"/>
+          </div>
+          {% endif %}
         </div>
         <div class="card-footer border-0 bg-transparent">
           <time datetime="{{ post.date | date_to_xmlschema }}" class="text-secondary">
