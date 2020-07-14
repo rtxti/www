@@ -4,5 +4,18 @@ title: Homepage
 ---
 
 <div class="container-fluid">
-  hello
+  <div class="card-column">
+    {% for post in paginator.posts %}
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">
+          {{ post.title }}
+        </h4>
+        <p class="card-text">
+          {{ post.content | truncate: 140 | strip_html }}
+        </p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </div>
