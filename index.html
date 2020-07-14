@@ -7,6 +7,9 @@ title: Homepage
   <div class="card-columns">
     {% for post in site.posts %}
     <div class="card">
+      {% if post.images %}
+      <img src="{{ post.images }}" alt="{{ post.title }}" class="card-img-top" />
+      {% endif %}
       <div class="card-body">
         <h4 class="card-title">
           {{ post.title }}
