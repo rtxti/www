@@ -2,6 +2,7 @@
 layout: default
 title: Post Template Two
 description: Post with feature image
+images: https://source.unsplash.com/FO7JIlwjOtU
 ---
 
 **Why do we use it?**
