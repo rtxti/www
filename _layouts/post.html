@@ -3,12 +3,12 @@ layout: default
 ---
 
 <div class="container">
-  <h1>
+  <h3>
     {{ page.title }}
     {% if page.description %}
-    <small class="text-secondary">{{ page.description }}</small>
+    <small class="d-inline-block text-secondary">{{ page.description }}</small>
     {% endif %}
-  </h1>
+  </h3>
   {% if page.images %}
   <div class="embed-responsive embed-responsive-16by9">
     <img src="{{ page.images }}" alt="{{ page.title }}" class="embed-responsive-item obj-fit-cover"/>
