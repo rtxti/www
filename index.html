@@ -9,6 +9,9 @@ title: Homepage
     <div class="col mb-3">
       <div class="card h-100">
         <div class="card-body">
+          <time datetime="{{ post.date | date_to_xmlschema }}" class="text-secondary">
+            <small>{{ post.date | date_to_long_string }}</small>
+          </time>
           <h5 class="card-title">
             {{ post.title }}
           </h5>
@@ -26,9 +29,9 @@ title: Homepage
           {% endif %}
         </div>
         <div class="card-footer border-0 bg-transparent">
-          <time datetime="{{ post.date | date_to_xmlschema }}" class="text-secondary">
-            <small>{{ post.date | date_to_long_string }}</small>
-          </time>
+          <a href="{{ post.url }}" class="stretched-link text-secondary">
+            <small>Read more</small>
+          </a>
         </div>
       </div>
     </div>
