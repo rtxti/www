@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Post Template Four
 description: Post with feature image
 ---
