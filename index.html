@@ -8,8 +8,8 @@ title: Homepage
     {% for post in site.posts %}
     <div class="col mb-3">
       <div class="card h-100">
-        <div class="card-header mb-0 border-0 bg-transparent">
-          <small class="pb-2 text-secondary">
+        <div class="card-header pb-0 border-0 bg-transparent">
+          <small class="text-secondary">
             <time datetime="{{ post.date | date_to_xmlschema }}">
               {{ post.date | date_to_long_string }}
             </time>
