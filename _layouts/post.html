@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="container">
+  <h1>
+    {{ page.title }}
+    {% if page.description %}
+    <small class="text-secondary">{{ page.description }}</small>
+    {% endif %}
+  </h1>
+  {% if page.images %}
+  <div class="embed-responsive embed-responsive-16by9">
+    <img src="{{ page.images }}" alt="{{ page.title }}" class="embed-responsive-item obj-fit-cover"/>
+  </div>
+  {% endif %}
+  <div>
+    {{ page.content }}
+  </div>
+</div>
