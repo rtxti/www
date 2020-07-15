@@ -3,17 +3,26 @@ layout: default
 ---
 
 <div class="container">
-  <h3>
-    {{ page.title }}
-    {% if page.description %}
-    <small class="d-inline-block text-secondary">{{ page.description }}</small>
-    {% endif %}
-  </h3>
+  <div>
+    <h3>
+      {{ page.title }}
+      {% if page.description %}
+      <small class="d-inline-block text-secondary">{{ page.description }}</small>
+      {% endif %}
+    </h3>
+    <small class="text-secondary">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date_to_long_string }}
+      </time>
+    </small>
+  </div>
+  
   {% if page.images %}
   <div class="embed-responsive embed-responsive-16by9">
     <img src="{{ page.images }}" alt="{{ page.title }}" class="embed-responsive-item obj-fit-cover"/>
   </div>
   {% endif %}
+  
   <div>
     {{ page.content }}
   </div>
