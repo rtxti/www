@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Post Template One
 description: Post with no media
 ---
