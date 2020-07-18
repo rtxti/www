@@ -1,11 +1,11 @@
 ---
 layout: default
 title: iPhone se
+path: iphone-se
 ---
 
 <div class="container">
-  <h3>holla</h3>
-  {% for phone in site.data.smartphones.iphone-se %}
+  <h3>{{ page.title }}</h3>
+  {% assign phone = site.data.smartphones[page.path] %}
   <h4>{{ phone.release }}</h4>
-  {% endfor %}
 </div>
