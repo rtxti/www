@@ -9,6 +9,6 @@ title: Smartphones
   <h3>
     {{ phone.title }}
   </h3>
-  <a href="{{ phone.url }}">Learn more</a>
+  <a href="{{ phone.url | relative_url }}">Learn more</a>
   {% endfor %}
 </div>
