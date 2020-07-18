@@ -4,9 +4,11 @@ title: Smartphones
 ---
 
 <div class="container">
-  {% assign phone = site.smartphone | group_by: "brand" %}
+  {% assign phones = site.smartphone | group_by: "brand" %}
+  {% for phone in phones %}
     <h3>{{ phone.brand }}</h3>
     <li>
       <a href="{{ phone.url | relative_url }}">{{ phone.title }}</a>
     </li>
+  {% endfor %}
 </div>
