@@ -9,5 +9,6 @@ path: 1
   {% for phones in site.data.smartphones %}
   {% assign phone = phones[page.path] %}
   <h4>{{ phone.release }}</h4>
+  {% endfor %}
   crapsz
 </div>
