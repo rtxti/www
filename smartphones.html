@@ -5,10 +5,10 @@ title: Smartphones
 
 <div class="container">
   {% for phone in site.smartphones | sort: "brand" %}
+  <h4>{{ phone.brand }}</h4>
   <ul>
-    <h4>{{ phone.brand }}</h4>
     <li>
-      <a href="{{ phone.url | relative_url }}">{{ phone.name }}</a>
+      <a href="{{ phone.url | relative_url }}">{{ phone.title }}</a>
     </li>
     <hr>
   </ul>
