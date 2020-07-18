@@ -6,7 +6,7 @@ path: iphone-se
 
 <div class="container">
   <h3>{{ page.title }}</h3>
-  {% assign phone = site.data.smartphones.[page.path] %}
+  {% assign phones = site.data.smartphones[page.path] %}
   <h4>{{ phone.release }}</h4>
   crap
 </div>
