@@ -6,6 +6,9 @@ title: Smartphones
 <div class="container">
   <h2>crapz</h2>
   {% for phone in site.smartphones %}
-  <h3>{{ phone.title }}</h3>
+  <h3>
+    {{ phone.title }}
+  </h3>
+  <a href="{{ phone.url }}">Learn more</a>
   {% endfor %}
 </div>
