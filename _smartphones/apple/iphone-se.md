@@ -7,8 +7,8 @@ path: 1
 <div class="container">
   <h3>{{ page.title }}</h3>
   {% for phones in site.data.smartphones.iphone-se %}
-  {% assign phone = phones[iphone-se] %}
+  {% assign phone = phones %}
   <h4>{{ phone.name }}</h4>
   {% endfor %}
-  crapz
+  craps
 </div>
