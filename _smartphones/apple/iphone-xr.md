@@ -5,7 +5,7 @@ title: iPhone xr
 
 <div class="container">
   <h3>{{ page.title }}</h3>
-  {% for phone-list in site.data.smartphones %}
+  {% for phone-list in site.data.smartphones.iphone-xr %}
   {% assign phone = phone-list[1] %}
   <h4>{{ phone.name }}</h4>
   {% endfor %}
