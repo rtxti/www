@@ -1,7 +1,6 @@
 ---
 layout: default
 title: iPhone se
-path: 1
 ---
 
 <div class="container">
