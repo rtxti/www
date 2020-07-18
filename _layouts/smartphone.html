@@ -5,6 +5,12 @@ layout: default
 <div class="container">
   <h3>{{ page.title }}</h3>
   {% assign phone = site.data.smartphones.[page.label] %}
-  <h4>{{ phone.name }}</h4>
-  <h4>{{ phone.release }}</h4>
+  <ul>
+    <li>{{ phone.name }}</li>
+    <li>{{ phone.release }}</li>
+    <li>{{ phone.display.type }}</li>
+    <li>{{ phone.display.size }}</li>
+    <li>{{ phone.display.resolution }}</li>
+    <li>{{ phone.display.protection }}</li>
+  </ul>
 </div>
