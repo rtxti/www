@@ -4,9 +4,8 @@ title: iphone se
 ---
 
 <div class="container">
-  <h3>olla</h3>
-  {% assign phones = site.data.smartphones.apple.iphone-se %}
-  {% for phone in phones %}
+  <h3>ola</h3>
+  {% for phone in site.data.smartphones.apple.iphone-se %}
   <h4>{{ phone.name }}</h4>
   {% endfor %}
 </div>
