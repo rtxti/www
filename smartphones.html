@@ -5,7 +5,6 @@ title: Smartphones
 
 <div class="container">
   {% for phone in site.smartphones | group_by: "brand" %}
-  <h4>{{ phone.brand }}</h4>
   <ul>
     <li>
       <a href="{{ phone.url | relative_url }}">{{ phone.title }}</a>
