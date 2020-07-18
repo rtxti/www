@@ -10,5 +10,5 @@ path: 1
   {% assign phone = phones[page.path] %}
   <h4>{{ phone.name }}</h4>
   {% endfor %}
-  crapz
+  craps
 </div>
