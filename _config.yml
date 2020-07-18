@@ -12,6 +12,10 @@ timezone: Asia/Jakarta
 sass:
   sass_dir: _sass
   style: :compressed
+  
+collections:
+  smartphones:
+    output: true
 
 author:
   name: rtxti
