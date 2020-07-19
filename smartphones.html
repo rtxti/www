@@ -4,7 +4,7 @@ title: Smartphones
 ---
 
 <div class="container">
-  {% assign phones = site.smartphones | group_by: "brand" %}
+  {% assign phones = site.smartphones | sort: "brand" %}
     <h3>{{ phone.brand }}</h3>
   {% for phone in phones %}
     <li>
