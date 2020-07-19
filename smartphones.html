@@ -6,6 +6,6 @@ title: Smartphones
 <div class="container">
   {% assign phones = site.smartphones %}
   {% for phone in phones | sort: 'brand' %}
-  <a href="{{ phone.url | relative_url }}">{{ phone.title }}</a>
+  <li><a href="{{ phone.url | relative_url }}">{{ phone.title }}</a></li>
   {% endfor %}
 </div>
