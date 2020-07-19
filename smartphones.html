@@ -7,7 +7,7 @@ title: Smartphones
   yaiks
   {% assign phone-brand = site.smartphones | sort: "uniq-name" %}
   {% for brand in phone-brand %}
-    {% if brand %}
+    {% if brand.uniq-name %}
     <li><a href="{{ brand.url | relative_url }}">{{ brand.title }}</a></li>
     {% endif %}
   {% endfor %}
