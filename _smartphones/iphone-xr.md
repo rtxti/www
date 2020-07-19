@@ -2,5 +2,6 @@
 layout: smartphone
 title: iPhone xr
 label: iphone-xr
-brand: false
+brand: iphone
+published: false
 ---
