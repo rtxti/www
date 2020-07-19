@@ -16,6 +16,7 @@ sass:
 collections:
   smartphones:
     output: true
+    sort_by: brand
 
 author:
   name: rtxti
