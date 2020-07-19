@@ -5,7 +5,7 @@ title: Smartphones
 
 <div class="container">
   yaiks
-  {% assign phone-brand = site.smartphones | sort: "label" %}
+  {% assign phone-brand = site.smartphones | sort: "uniq-name" %}
   {% for brand in phone-brand %}
   <li><a href="{{ brand.url | relative_url }}">{{ brand.title }}</a></li>
   {% endfor %}
