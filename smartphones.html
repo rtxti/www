@@ -5,7 +5,8 @@ title: Smartphones
 
 <div class="container">
   yaiks
-  {% for phone in site.smartphones %}
-  <li><a href="{{ phone.url | relative_url }}">{{ phone.title }}</a></li>
+  {% assign phone-brand = site.smartphones | sort: "brand" %}
+  {% for brand in phone-brand %}
+  <li><a href="{{ brand.url | relative_url }}">{{ brand.title }}</a></li>
   {% endfor %}
 </div>
