@@ -1,0 +1,11 @@
+---
+layout: default
+title: Oneplus
+---
+
+<div class="container">
+  {% assign phone-by-brand = site.smartphones | where: "brand", "oneplus" %}
+  {% for phone in phone-by-brand %}
+  <li><a href="{{ phone.url | relative_url }}">{{ phone.title }}</a></li>
+  {% endfor %}
+</div>
