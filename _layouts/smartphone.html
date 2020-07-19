@@ -4,7 +4,7 @@ layout: default
 
 <div class="container">
   <h3>{{ page.title }}</h3>
-  {% assign phone = site.data.smartphones.[page.label] %}
+  {% assign phone = site.data.smartphones.[page.data] %}
   <ul>
     <li>{{ phone.name }}</li>
     <li>{{ phone.release }}</li>
