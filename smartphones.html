@@ -26,20 +26,8 @@ title: Smartphones
 {% endcomment %}
 
 <div class="container">
-  <div class="row row-cols-1 row-cols-md-3">
-  {% assign phone-brand = site.smartphones | sort: "uniq-name" %}
-  {% for brand in phone-brand %}
-    <div class="col mb-3">
-      <div class="card">
-        <div class="card-body">
-          <h4 class="card-title mb-0">
-            <a href="{{ brand.url | relative_url }}" class="stretched-link text-dark">
-              {{ brand.title }}
-            </a>
-          </h4>
-        </div>
-      </div>
-    </div>
+  {% assign phone-by-brand = site.smartphones | where: "brand", "apple" %}
+  {% for phone in phone-by-brand %}
+  <li><a href="{{ phone.url | relative_url }}">{{ phone.title }}</a></li>
   {% endfor %}
-  </div>
 </div>
