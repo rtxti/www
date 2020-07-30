@@ -27,7 +27,7 @@ title: Smartphones
 
 <div class="container">
   {% assign phone-by-brand = site.smartphones | where: "brand", "oneplus" %}
-  <h3>{{ phone. }}</h4>
+  <h3>{{ phone.brand }}</h4>
   {% for phone in phone-by-brand %}
   <li><a href="{{ phone.url | relative_url }}">{{ phone.title }}</a></li>
   <span>{{ phone.size }}</span>
