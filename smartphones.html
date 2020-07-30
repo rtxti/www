@@ -26,7 +26,7 @@ title: Smartphones
 {% endcomment %}
 
 <div class="container">
-  {% assign phone-by-brand = site.smartphones | where: "brand", "apple" %}
+  {% assign phone-by-brand = site.smartphones | sort: "brand" %}
   {% for phone in phone-by-brand %}
   <li><a href="{{ phone.url | relative_url }}">{{ phone.title }}</a></li>
   {% endfor %}
