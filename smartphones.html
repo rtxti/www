@@ -27,12 +27,12 @@ title: Smartphones
 
 <div class="container">
   <h3>Apple</h3>
-  <section class="row flex-row flex-nowrap overflow-auto">
+  <section class="row rows-1 rows-md-4 flex-row flex-nowrap overflow-auto">
     {% assign phone-by-brand = site.smartphones | where: "brand", "apple" %}
     {% for phone in phone-by-brand %}
     <div class="col-4">
       <div class="embed-responsive embed-responsive-4by3 obj-fit-contain">
-        <img src="https://source.unsplash.com/lTUyP3RaLpw" class="embed-responsive-item" />
+        <img src="{{ phone.images }}" class="embed-responsive-item" />
       </div>
       <p>
         <a href="{{ phone.url | relative_url }}">
