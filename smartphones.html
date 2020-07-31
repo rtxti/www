@@ -31,8 +31,8 @@ title: Smartphones
     {% assign phone-by-brand = site.smartphones | where: "brand", "apple" %}
     {% for phone in phone-by-brand %}
     <div class="col-5">
-      <div class="embed-responsive embed-responsive-4by3 obj-fit-cover">
-        <img src="{{ phone.images }}" class="embed-responsive-item" />
+      <div class="embed-responsive embed-responsive-4by3">
+        <img src="{{ phone.images }}" class="embed-responsive-item obj-fit-scale-dow" />
       </div>
       <p>
         <a href="{{ phone.url | relative_url }}">
