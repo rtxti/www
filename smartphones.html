@@ -30,7 +30,7 @@ title: Smartphones
   <section class="row flex-row flex-nowrap overflow-auto">
     {% assign phone-by-brand = site.smartphones | where: "brand", "apple" %}
     {% for phone in phone-by-brand %}
-    <div class="col-4">
+    <div class="col-5">
       <div class="embed-responsive embed-responsive-4by3 obj-fit-contain">
         <img src="{{ phone.images }}" class="embed-responsive-item" />
       </div>
