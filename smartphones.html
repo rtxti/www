@@ -26,17 +26,20 @@ title: Smartphones
 {% endcomment %}
 
 <div class="container">
-  {% assign phone-by-brand = site.smartphones | where: "brand", "apple" %}
-  <h3>Apple</h3>
-  {% for phone in phone-by-brand %}
-  <li><a href="{{ phone.url | relative_url }}">{{ phone.title }}</a></li>
-  {% endfor %}
-  <span>{{ phone-by-brand.size }}</span>
-  
-  {% assign phone-by-brand = site.smartphones | where: "brand", "oneplus" %}
-  <h3>Oneplus</h3>
-  {% for phone in phone-by-brand %}
-  <li><a href="{{ phone.url | relative_url }}">{{ phone.title }}</a></li>
-  {% endfor %}
-  <span>{{ phone-by-brand.size }}</span>
+  <section class="row">
+    <h3>Apple</h3>
+    {% assign phone-by-brand = site.smartphones | where: "brand", "apple" %}
+    {% for phone in phone-by-brand %}
+    <div class="col">
+      <div class="embed-responsive embed-responsive-4by3">
+        <img src="https://source.unsplash.com/lTUyP3RaLpw" class="embed-responsive-item" />
+        <span>
+          <a href="{{ phone.url | relative_url }}">
+            {{ phone.title }}
+          </a>
+        </span>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
 </div>
