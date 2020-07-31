@@ -26,18 +26,18 @@ title: Smartphones
 {% endcomment %}
 
 <div class="container">
-  <section class="row">
+  <section class="row row-cols-2 row-cols-md-4">
     <h3>Apple</h3>
     {% assign phone-by-brand = site.smartphones | where: "brand", "apple" %}
     {% for phone in phone-by-brand %}
     <div class="col">
       <div class="embed-responsive embed-responsive-4by3">
         <img src="https://source.unsplash.com/lTUyP3RaLpw" class="embed-responsive-item" />
-        <span>
+        <p>
           <a href="{{ phone.url | relative_url }}">
             {{ phone.title }}
           </a>
-        </span>
+        </p>
       </div>
     </div>
     {% endfor %}
